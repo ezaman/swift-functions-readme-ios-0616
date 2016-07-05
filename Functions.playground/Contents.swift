@@ -1,12 +1,13 @@
-func sayHello() {
-    let greeting = "Hello there!"
+func sayHello(friendName: String) {
+    let greeting = "Hello there, \(friendName)!"
     print(greeting)
 }
 
-sayHello()
-sayHello()
+sayHello("Tyrion")
+sayHello("Ned")
+sayHello("Dany")
 
-// Uncomment this line to see the error that is printed in the console.
+//Uncomment this line to see the error that is printed in the console.
 // (You can uncomment a line by removing the // at the beginning of the line.)
 //print(greeting)
 
@@ -32,6 +33,16 @@ sayHelloToCat("Mittens")
 
 let catFriend = "Socks"
 sayHelloToCat(catFriend)
+
+
+func sayGoodbye() {
+    
+    let farewell = "Goodbye, world."
+    print(farewell)
+}
+
+sayGoodbye()
+
 
 // Uncomment this line to see the error that is printed in the console.
 //sayHelloToCat()
